@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{FF29031D-710C-EAED-1BA8-7CD629506A4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_1;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;PLATFORM_SUPPORTS_ADS_ID;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_DUCK_TYPING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Q:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Q:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\QuickSheet\Editor\BaseMachine.cs" />
+     <Compile Include="Assets\QuickSheet\Editor\BaseMachineEditor.cs" />
+     <Compile Include="Assets\QuickSheet\Editor\CustomAssetUtility.cs" />
+     <Compile Include="Assets\QuickSheet\Editor\GUIHelper.cs" />
+     <Compile Include="Assets\QuickSheet\Editor\NewScriptGenerator.cs" />
+     <Compile Include="Assets\QuickSheet\Editor\ScriptPrescription.cs" />
+     <Compile Include="Assets\QuickSheet\ExcelPlugin\Editor\BaseExcelEditor.cs" />
+     <Compile Include="Assets\QuickSheet\ExcelPlugin\Editor\ExcelMachine.cs" />
+     <Compile Include="Assets\QuickSheet\ExcelPlugin\Editor\ExcelMachineEditor.cs" />
+     <Compile Include="Assets\QuickSheet\ExcelPlugin\Editor\ExcelQuery.cs" />
+     <Compile Include="Assets\QuickSheet\ExcelPlugin\Editor\ExcelSettings.cs" />
+     <Compile Include="Assets\QuickSheet\ExcelPlugin\Editor\ExcelSettingsEditor.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\BaseGoogleEditor.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\ExposeProperties.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\ITableExtensions.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\Evaluator.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\ExpressionVisitor.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\GDataDBQueryProvider.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\OrderTranslator.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\Query.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\QueryProvider.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\QueryTranslator.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\TypeSystem.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB.Linq\Impl\WhereTranslator.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\DatabaseClient.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\IDatabase.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\IDatabaseClient.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\IRow.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\ITable.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\Impl\Database.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\Impl\GDataDBRequestFactory.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\Impl\Row.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\Impl\Serializer.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\Impl\Table.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\Order.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\GDataDB\Query.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GoogleDataSettings.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GoogleDataSettingsEditor.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GoogleMachine.cs" />
+     <Compile Include="Assets\QuickSheet\GDataPlugin\Editor\GoogleMachineEditor.cs" />
+     <None Include="Assets\Graphics\Fonts\Just_Me_Again_Down_Here\OFL.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\Newtonsoft.Json.xml" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\Google.GData.license.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Templates\DataClass.txt" />
+     <None Include="Assets\QuickSheet\ExcelPlugin\Editor\Library\NPOI.2.1.1.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Templates\ScriptableObjectEditorClass.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\license.txt" />
+     <None Include="Assets\QuickSheet\ExcelPlugin\Templates\AssetFileClass.txt" />
+     <None Include="Assets\Graphics\Fonts\Nothing_You_Could_Do\OFL.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Templates\Property.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Editor\Google\nunit.license.txt" />
+     <None Include="Assets\QuickSheet\ExcelPlugin\Templates\Property.txt" />
+     <None Include="Assets\QuickSheet\ExcelPlugin\Templates\PostProcessor.txt" />
+     <None Include="Assets\QuickSheet\ExcelPlugin\Templates\ScriptableObjectClass.txt" />
+     <None Include="Assets\QuickSheet\ExcelPlugin\Templates\ScriptableObjectEditorClass.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Editor\GDataDB\license.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Templates\ScriptableObjectClass.txt" />
+     <None Include="Assets\QuickSheet\GDataPlugin\Templates\AssetFileClass.txt" />
+     <None Include="Assets\QuickSheet\ExcelPlugin\Templates\DataClass.txt" />
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.EditorTestsRunner">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/ExcelPlugin/Editor/Library/NPOI.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI.OOXML">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/ExcelPlugin/Editor/Library/NPOI.OOXML.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI.OpenXml4Net">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/ExcelPlugin/Editor/Library/NPOI.OpenXml4Net.dll</HintPath>
+ </Reference>
+ <Reference Include="NPOI.OpenXmlFormats">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/ExcelPlugin/Editor/Library/NPOI.OpenXmlFormats.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Data">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/ExcelPlugin/Editor/Library/System.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Drawing">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/ExcelPlugin/Editor/Library/System.Drawing.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.GData.AccessControl">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/GDataPlugin/Editor/Google/Google.GData.AccessControl.DLL</HintPath>
+ </Reference>
+ <Reference Include="Google.GData.Client">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/GDataPlugin/Editor/Google/Google.GData.Client.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.GData.Documents">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/GDataPlugin/Editor/Google/Google.GData.Documents.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.GData.Extensions">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/GDataPlugin/Editor/Google/Google.GData.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.GData.Spreadsheets">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/GDataPlugin/Editor/Google/Google.GData.Spreadsheets.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/GDataPlugin/Editor/Google/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>Q:/Coditoergosum/Projects/Arvausleikki/Assets/QuickSheet/GDataPlugin/Editor/Google/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>Q:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{95C6F6CA-1574-4592-2414-761308B94138}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
